@@ -25,7 +25,7 @@ Copyright 2024, ZipCodeWilmington
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
         <main.class>rocks.zipcode.everest.Main</main.class>
     </properties>
     <build>
@@ -60,6 +60,14 @@ Copyright 2024, ZipCodeWilmington
                 <version>3.0.0</version>
                 <configuration>
                     <mainClass>${main.class}</mainClass>
+                    <jvmArgs>
+                        <jvmArg>--add-opens=javafx.graphics/com.sun.javafx.css=ALL-UNNAMED</jvmArg>
+                        <jvmArg>--add-opens=javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED</jvmArg>
+                        <jvmArg>--add-opens=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED</jvmArg>
+                        <jvmArg>--add-opens=javafx.base/com.sun.javafx.binding=ALL-UNNAMED</jvmArg>
+                        <jvmArg>--add-opens=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED</jvmArg>
+                        <jvmArg>--add-opens=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED</jvmArg>
+                    </jvmArgs>
                 </configuration>
             </plugin>
         </plugins>
@@ -143,7 +151,7 @@ Copyright 2024, ZipCodeWilmington
         <dependency>
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
-            <version>8.0.10</version>
+            <version>9.0.10</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <dependency>
@@ -212,22 +220,22 @@ Copyright 2024, ZipCodeWilmington
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17.0.6</version>
+            <version>21</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17.0.6</version>
+            <version>21</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-base</artifactId>
-            <version>17.0.6</version>
+            <version>21</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>17.0.6</version>
+            <version>21</version>
         </dependency>
     </dependencies>
 </project>
