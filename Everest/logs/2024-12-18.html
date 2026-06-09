@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2018 Rohit Awate.
+Copyright 2024, ZipCodeWilmington
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18/12/2024</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #282828;
+            font-size: 15px;
+            font-family: "Liberation Mono", monospace;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            color: white;
+            background-color: #747474;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        .SEVERE {
+            color: orangered;
+        }
+
+        .WARNING {
+            color: yellow;
+        }
+
+        .INFO {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<h1>Everest Logs: 18/12/2024</h1>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:35:22 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="SEVERE">
+    <strong>SEVERE</strong> 18/12/2024 15:35:22 <br>
+    <strong>Unable to create directory: Everest/config/</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:35:22 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:35:23 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:35:23 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:39:00 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:39:01 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:39:01 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:39:01 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:56:06 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:56:07 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:56:07 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 15:56:07 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:02:27 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:02:28 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:02:28 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:02:28 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="WARNING">
+    <strong>WARNING</strong> 18/12/2024 16:04:23 <br>
+    <strong>GET request could not be processed.</strong> <br>
+    jakarta.ws.rs.ProcessingException: java.net.ConnectException: Connection refused<br>
+ -- org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:264)<br>
+ -- org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:297)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:619)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:654)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:648)<br>
+ -- org.glassfish.jersey.internal.Errors.process(Errors.java:292)<br>
+ -- org.glassfish.jersey.internal.Errors.process(Errors.java:274)<br>
+ -- org.glassfish.jersey.internal.Errors.process(Errors.java:205)<br>
+ -- org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:648)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:618)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:397)<br>
+ -- org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:297)<br>
+ -- rocks.zipcode.everest.requestmanager.RequestManager$1.call(RequestManager.java:104)<br>
+ -- rocks.zipcode.everest.requestmanager.RequestManager$1.call(RequestManager.java:95)<br>
+ -- javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)<br>
+ -- java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br>
+ -- javafx.graphics/javafx.concurrent.Service.lambda$executeTask$6(Service.java:727)<br>
+ -- java.base/java.security.AccessController.doPrivileged(AccessController.java:399)<br>
+ -- javafx.graphics/javafx.concurrent.Service.lambda$executeTask$7(Service.java:726)<br>
+ -- java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br>
+ -- java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br>
+ -- java.base/java.lang.Thread.run(Thread.java:840)<br>
+
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:09:47 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:09:48 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:11:09 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:11:10 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:11:10 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:11:10 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:13:58 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:13:59 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:18:10 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:18:11 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:18:11 <br>
+    <strong>Application state file not found. Loading default state.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:18:11 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:18:26 <br>
+    <strong>Application state saved.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:46:19 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:46:20 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:46:20 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:46:35 <br>
+    <strong>Application state saved.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:53:11 <br>
+    <strong>Settings file not found. Loading defaults.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:53:12 <br>
+    <strong>Connected to database.</strong> <br>
+    
+</p>
+<p class="INFO">
+    <strong>INFO</strong> 18/12/2024 16:53:12 <br>
+    <strong>Application loaded.</strong> <br>
+    
+</p>
